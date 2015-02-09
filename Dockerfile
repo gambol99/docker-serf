@@ -7,7 +7,7 @@
 FROM progrium/busybox
 MAINTAINER Rohith <gambol99@gmail.com>
 
-RUN opkg-install unzip curl
+RUN opkg-install unzip curl bash
 RUN curl -skL https://dl.bintray.com/mitchellh/serf/0.6.3_linux_amd64.zip > 0.6.3_linux_amd64.zip && \
   unzip 0.6.3_linux_amd64.zip && \
   chmod +x serf
