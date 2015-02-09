@@ -24,7 +24,6 @@ sleep $SLEEP_TIME
 -e NAME=serf \
 -e ENVIRONMENT=prod \
 -e SERVICE_7946_NAME=serf \
--e SERVICE_7946_TAGS=udp \
 -v /env/prod/serf/serf.json:/serf.json \
 -p ${COREOS_PRIVATE_IPV4}:7946:7946/udp \
 -p ${COREOS_PRIVATE_IPV4}:7946:7946 \
